@@ -1,6 +1,7 @@
 // The usePathname hook is dependent on browser API, so this component needs to be a client component
 "use client";
 
+import { Skeleton } from "@/app/components";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -64,7 +65,7 @@ const NavLinks = () => {
 const AuthStatus = () => {
   const { status, data: session } = useSession();
 
-  if (status === "loading") return null;
+  if (status === "loading") return <Skeleton width="3rem" />;
 
   if (status === "unauthenticated")
     return (
