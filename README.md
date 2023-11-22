@@ -27,11 +27,10 @@ NEXTAUTH_URL="http://localhost:3000" # THE URL OF YOUR DEVELOPMENT SERVER
 NEXTAUTH_SECRET="YOUR_NEXTAUTH_SECRET"
 GOOGLE_CLIENT_ID="YOUR_GOOGLE_CLIENT_ID" # You need to set up OAuth on Google Cloud Platform to get a Client ID and Secret
 GOOGLE_CLIENT_SECRET="YOUR_GOOGLE_CLIENT_SECRET"
-
 ```
 
 3. Install the necessary dependencies with `npm install`.
-4. Run `npx prisma migrate` dev to generate your database tables.
+4. Run `npx prisma migrate dev` to generate your database tables.
 5. Run `npm run dev` to start the web server.
 
 ## Contributing
